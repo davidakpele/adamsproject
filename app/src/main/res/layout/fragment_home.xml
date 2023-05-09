@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+           >
+            <!--      All Home Content goes Here          -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/body_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/SubHeader"
+                    android:weightSum="5">
+                    <!--    The purpose of the scroll is tp make the ui responsive-->
+                    <RelativeLayout
+                        android:id="@+id/SearchPanelContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/SubHeader"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintEnd_toEndOf="@id/SubHeader"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <!--edit text for getting the search query for book from user-->
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/LoginTextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            app:boxStrokeColor="#696666"
+                            android:textColorHint="#696666"
+                            android:layout_height="55dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/idEdtSearchBooks"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:inputType="text|textAutoComplete"
+                                android:drawableStart="@drawable/baseline_search_24"
+                                android:drawablePadding="2dp"
+                                android:textColor="@color/black"
+                                app:boxStrokeColor="@color/black"
+                                android:hint="Search..."
+                                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
