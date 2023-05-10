@@ -5,6 +5,11 @@
     <string name="title_categories">Categories</string>
     <string name="title_account">Account</string>
     <string name="name_search">Search</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="Login_text">Login</string>
+    <string name="continueBtn">Create new account</string>
+    <string name="Find_Us">Find Us</string>
+    <string name="Get_Help">Get Help</string>
 
     <style name="button" parent="@android:style/Widget.Button">
         <item name="android:gravity">center_vertical|center_horizontal</item>
