@@ -68,13 +68,13 @@
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="18dp"
                         android:layout_marginRight="12dp"
-                        android:background="#ccc">
+                        android:background="#fff">
 
                         <ImageView
                             android:id="@+id/Cocal_id"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/coca" />
+                            app:srcCompat="@drawable/pep0001" />
                     </RelativeLayout>
                 <RelativeLayout
                     android:id="@+id/cat_itm2"
@@ -84,11 +84,11 @@
                     android:layout_marginEnd="20dp"
                     android:layout_marginRight="12dp"
                     android:layout_toRightOf="@+id/cat_itm1"
-                    android:background="#ccc">
+                    android:background="#fff">
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/pepsi" />
+                        app:srcCompat="@drawable/pepsi5" />
                 </RelativeLayout>
                     <TextView
                         android:id="@+id/fantaTitle"
@@ -110,13 +110,13 @@
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="18dp"
                         android:layout_marginRight="12dp"
-                        android:background="#ccc">
+                        android:background="#fff">
 
                         <ImageView
                             android:id="@+id/fanta1_img"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/coca" />
+                            app:srcCompat="@drawable/fanta000" />
                     </RelativeLayout>
                     <RelativeLayout
                         android:id="@+id/fanta_Container_2"
@@ -127,14 +127,12 @@
                         android:layout_marginEnd="20dp"
                         android:layout_marginRight="12dp"
                         android:layout_toRightOf="@+id/fanta_Container1"
-                        android:background="#ccc">
+                        android:background="#fff">
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/pepsi" />
+                            app:srcCompat="@drawable/fanta001" />
                     </RelativeLayout>
-
-
 
                     <!--  Malta drinks goes here-->
                     <TextView
@@ -154,13 +152,13 @@
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="18dp"
                         android:layout_marginRight="12dp"
-                        android:background="#ccc">
+                        android:background="#fff">
 
                         <ImageView
                             android:id="@+id/malta1_img"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/coca" />
+                            app:srcCompat="@drawable/maltapack" />
                     </RelativeLayout>
                     <RelativeLayout
                         android:id="@+id/malta_Container_2"
@@ -170,12 +168,54 @@
                         android:layout_alignParentEnd="true"
                         android:layout_marginEnd="20dp"
                         android:layout_marginRight="12dp"
-                        android:layout_toRightOf="@+id/fanta_Container1"
-                        android:background="#ccc">
+                        android:layout_toRightOf="@+id/malta_p1"
+                        android:background="#fff">
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/pepsi" />
+                            app:srcCompat="@drawable/malta0001" />
+                    </RelativeLayout>
+
+                    <!--  Mirinda drinks goes here-->
+                    <TextView
+                        android:id="@+id/mirindaTitle"
+                        android:layout_below="@+id/malta_Container_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="24dp"
+                        android:text="Mirinda Drinks"
+                        android:textSize="18sp"/>
+                    <RelativeLayout
+                        android:layout_below="@+id/mirindaTitle"
+                        android:id="@+id/mirinda_p1"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginRight="12dp"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:id="@+id/mirinda1_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/mirinda0002" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/mirindaa_Container_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/mirindaTitle"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toRightOf="@+id/malta_p1"
+                        android:background="#fff">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/mirinda0001" />
                     </RelativeLayout>
             </RelativeLayout>
 
