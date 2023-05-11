@@ -23,8 +23,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+<!--            <ListView-->
+<!--                android:id="@+id/listView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="fill_parent" />-->
         <RelativeLayout
-            android:id="@+id/category_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/banner"
@@ -48,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="24dp"
-                android:text="Coca Cola"
+                android:text="Pepsi"
                 android:textSize="18sp"/>
             <RelativeLayout
                 android:id="@+id/ListCategories"
@@ -64,22 +67,46 @@
                     <RelativeLayout
                         android:id="@+id/cat_itm1"
                         android:layout_width="200dp"
-                        android:layout_height="100dp"
+                        android:layout_height="120dp"
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="18dp"
                         android:layout_marginRight="12dp"
                         android:background="#fff">
-
-                        <ImageView
-                            android:id="@+id/Cocal_id"
+                        <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            app:srcCompat="@drawable/pep0001" />
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/Cocal_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/pep0001" />
+                            <ImageView
+                                android:id="@+id/favourite"
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_alignParentEnd="true"
+                                app:srcCompat="@drawable/baseline_favorite_24" />
+                            <Button
+                                android:layout_below="@+id/Cocal_id"
+                                android:id="@+id/view_recipe"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:backgroundTint="@color/bg"
+                                android:gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/View_recipes"
+                                android:textColor="@color/white"
+                                app:textAllCaps="true">
+                            </Button>
+                        </RelativeLayout>
+
                     </RelativeLayout>
                 <RelativeLayout
                     android:id="@+id/cat_itm2"
                     android:layout_width="wrap_content"
-                    android:layout_height="100dp"
+                    android:layout_height="120dp"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="20dp"
                     android:layout_marginRight="12dp"
@@ -89,39 +116,48 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         app:srcCompat="@drawable/pepsi5" />
+                    <ImageView
+                        android:id="@+id/favourite2"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_alignParentEnd="true"
+                        app:srcCompat="@drawable/baseline_favorite_24" />
                 </RelativeLayout>
                     <TextView
                         android:id="@+id/fantaTitle"
                         android:layout_below="@+id/cat_itm2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="30dp"
                         android:layout_marginBottom="24dp"
                         android:text="Fanta Drinks"
                         android:textSize="18sp"/>
-
 <!--                    Fanta drinks goes here-->
-
                     <RelativeLayout
                         android:layout_below="@+id/fantaTitle"
                         android:id="@+id/fanta_Container1"
                         android:layout_width="200dp"
-                        android:layout_height="100dp"
+                        android:layout_height="120dp"
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="18dp"
                         android:layout_marginRight="12dp"
                         android:background="#fff">
-
                         <ImageView
                             android:id="@+id/fanta1_img"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             app:srcCompat="@drawable/fanta000" />
+                        <ImageView
+                            android:id="@+id/favourite3"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_alignParentEnd="true"
+                            app:srcCompat="@drawable/baseline_favorite_24" />
                     </RelativeLayout>
                     <RelativeLayout
                         android:id="@+id/fanta_Container_2"
                         android:layout_width="wrap_content"
-                        android:layout_height="100dp"
+                        android:layout_height="120dp"
                         android:layout_below="@+id/fantaTitle"
                         android:layout_alignParentEnd="true"
                         android:layout_marginEnd="20dp"
@@ -132,6 +168,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             app:srcCompat="@drawable/fanta001" />
+                        <ImageView
+                            android:id="@+id/favourite4"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_alignParentEnd="true"
+                            app:srcCompat="@drawable/baseline_favorite_24" />
                     </RelativeLayout>
 
                     <!--  Malta drinks goes here-->
@@ -148,7 +190,7 @@
                         android:layout_below="@+id/maltaTitle"
                         android:id="@+id/malta_p1"
                         android:layout_width="200dp"
-                        android:layout_height="100dp"
+                        android:layout_height="120dp"
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="18dp"
                         android:layout_marginRight="12dp"
@@ -159,11 +201,17 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             app:srcCompat="@drawable/maltapack" />
+                        <ImageView
+                            android:id="@+id/favourite5"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_alignParentEnd="true"
+                            app:srcCompat="@drawable/baseline_favorite_24" />
                     </RelativeLayout>
                     <RelativeLayout
                         android:id="@+id/malta_Container_2"
                         android:layout_width="wrap_content"
-                        android:layout_height="100dp"
+                        android:layout_height="120dp"
                         android:layout_below="@+id/maltaTitle"
                         android:layout_alignParentEnd="true"
                         android:layout_marginEnd="20dp"
@@ -174,6 +222,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             app:srcCompat="@drawable/malta0001" />
+                        <ImageView
+                            android:id="@+id/favourite6"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_alignParentEnd="true"
+                            app:srcCompat="@drawable/baseline_favorite_24" />
                     </RelativeLayout>
 
                     <!--  Mirinda drinks goes here-->
@@ -190,7 +244,7 @@
                         android:layout_below="@+id/mirindaTitle"
                         android:id="@+id/mirinda_p1"
                         android:layout_width="200dp"
-                        android:layout_height="100dp"
+                        android:layout_height="120dp"
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="18dp"
                         android:layout_marginRight="12dp"
@@ -201,11 +255,17 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             app:srcCompat="@drawable/mirinda0002" />
+                        <ImageView
+                            android:id="@+id/favourite7"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_alignParentEnd="true"
+                            app:srcCompat="@drawable/baseline_favorite_24" />
                     </RelativeLayout>
                     <RelativeLayout
-                        android:id="@+id/mirindaa_Container_2"
+                        android:id="@+id/mirinda_Container_2"
                         android:layout_width="wrap_content"
-                        android:layout_height="100dp"
+                        android:layout_height="120dp"
                         android:layout_below="@+id/mirindaTitle"
                         android:layout_alignParentEnd="true"
                         android:layout_marginEnd="20dp"
@@ -216,6 +276,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             app:srcCompat="@drawable/mirinda0001" />
+                        <ImageView
+                            android:id="@+id/favourite8"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_alignParentEnd="true"
+                            app:srcCompat="@drawable/baseline_favorite_24" />
                     </RelativeLayout>
             </RelativeLayout>
 

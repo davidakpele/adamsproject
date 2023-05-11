@@ -7,9 +7,15 @@
     <string name="name_search">Search</string>
     <string name="forgot_password">Forgot Password</string>
     <string name="Login_text">Login</string>
+    <string name="View_recipes">View Recipe</string>
+    <string name="share_recipes">Share Recipe</string>
     <string name="continueBtn">Create new account</string>
     <string name="Find_Us">Find Us</string>
     <string name="Get_Help">Get Help</string>
+    <string name="pepsi_recipe_content">Pepsi is made with carbonated water, high fructose corn syrup, caramel color, sugar, phosphoric acid, caffeine, citric acid, and natural flavors.[67] A can of Pepsi (12 fl ounces) has 41 grams of carbohydrates (all from sugars), 30 mg of sodium, 0 grams of fat, 0 grams of protein, 38 mg of caffeine, and 150 calories. \n\n Pepsi has 10 more calories and two more grams of sugar and carbohydrates than Coca-Cola.[70] Caffeine-Free Pepsi contains the same ingredients but without the caffeine.</string>
+    <string name="mirinda_Recipes_content">Carbonated water, sugar, acidulant (citric acid), emulsifier (gum arabic), preservatives (sodium benzoate, potassium sorbate), natural orange flavor, antioxidants (ascorbic acid, calcium disodium EDTA), color (sunset yellow).</string>
+    <string name="fanta_recipe_content">CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, LESS THAN 2% OF: CITRIC ACID, NATURAL FLAVORS, SODIUM BENZOATE (TO PROTECT TASTE), MODIFIED FOOD STARCH, GLYCEROL ESTER OF ROSIN, YELLOW 6, RED 40.</string>
+    <string name="malta_recipe_content">Malt (Barley), Sucrose, Caramel Colouring (E150C), Carbon Dioxide, Hops and Vitamin B1, B3 and B6. Contains no preservatives.</string>
 
     <style name="button" parent="@android:style/Widget.Button">
         <item name="android:gravity">center_vertical|center_horizontal</item>
